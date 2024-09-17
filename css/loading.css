@@ -1,0 +1,250 @@
+:root {
+    --background: #121621;
+}
+
+.loader {
+    --duration: 3s;
+    --primary: rgba(39, 94, 254, 1);
+    --primary-light: #2f71ff;
+    --primary-rgba: rgba(39, 94, 254, 0);
+    width: 200px;
+    height: 320px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+@media(max-width: 480px) {
+    /* Optionally remove the line below if you don't need support for older versions of Internet Explorer */
+    /* zoom: .44; */
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    width: 320px;
+    height: 140px;
+    position: absolute;
+    right: 32%;
+    bottom: -11px;
+    background: var(--background);
+    transform: translateZ(200px) rotate(var(--r));
+    animation: mask var(--duration) linear forwards infinite;
+}
+
+.loader:after {
+    right: auto;
+    left: 32%;
+}
+
+.ground {
+    position: absolute;
+    left: -50px;
+    bottom: -120px;
+    transform-style: preserve-3d;
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(1);
+}
+
+.ground div {
+    transform: rotateX(90deg) rotateY(0deg) translate(-48px, -120px) translateZ(100px) scale(1);
+    width: 200px;
+    height: 200px;
+    background: var(--primary);
+    background: linear-gradient(45deg, var(--primary) 0%, var(--primary) 50%, var(--primary-light) 50%, var(--primary-light) 100%);
+    transform-style: preserve-3d;
+    animation: ground var(--duration) linear forwards infinite;
+}
+
+.ground div:before,
+.ground div:after {
+    content: '';
+    width: 156px;
+    height: 300px;
+    opacity: 0;
+    background: linear-gradient(var(--primary), var(--primary-rgba));
+    position: absolute;
+    transform: rotateX(var(--rx)) rotateY(var(--ry)) translate(var(--x), var(--y)) translateZ(var(--z));
+    animation: ground-shine var(--duration) linear forwards infinite;
+}
+
+.ground div:after {
+    --rx: 90deg;
+    --ry: 90deg;
+    --x: 0;
+    --y: 177px;
+    --z: 150px;
+}
+
+.box {
+    position: absolute;
+    animation: var(--duration) linear forwards infinite;
+    transform-style: preserve-3d; /* Ensure 3D transformation */
+    transform: translate(var(--x), var(--y)) rotateY(var(--ry)) rotateX(var(--rx)) rotateZ(var(--rz)); /* Apply 3D rotation */
+}
+
+.box div {
+    background-color: var(--primary);
+    width: 48px;
+    height: 48px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: var(--duration) ease forwards infinite;
+    animation-name: box-scale; /* Apply the scaling animation */
+    transform: scale(0); /* Initially set to scale(0) */
+}
+
+.box div:before,
+.box div:after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    width: inherit;
+    height: inherit;
+    transform: rotateX(var(--rx)) rotateY(var(--ry)) translate(var(--x), var(--y)) translateZ(var(--z));
+    filter: brightness(var(--b, 1.2));
+}
+
+.box div:after {
+    --rx: 0deg;
+    --ry: 90deg;
+    --x: 24px;
+    --y: 0;
+    --b: 1.4;
+}
+
+.box.box0 {
+    --x: -220px;
+    --y: -120px;
+    --rx: 0deg;
+    --ry: 0deg;
+    --rz: 0deg;
+    left: 58px;
+    top: 108px;
+    animation-name: box-move; /* Apply the movement animation */
+}
+
+/* Define other .box elements and their positions similarly */
+
+@keyframes box-move {
+    0% {
+        transform: translate(var(--x), var(--y));
+    }
+    25% {
+        transform: translate(0, 0);
+    }
+    80% {
+        transform: translate(0, -32px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes box-scale {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Define other keyframes (ground, ground-shine, mask) similarly */
+@keyframes ground {
+    0%, 65% {
+        transform: rotateX(90deg) rotateY(0deg) translate(-48px, -120px) translateZ(100px) scale(0);
+    }
+    75%, 90% {
+        transform: rotateX(90deg) rotateY(0deg) translate(-48px, -120px) translateZ(100px) scale(1);
+    }
+    100% {
+        transform: rotateX(90deg) rotateY(0deg) translate(-48px, -120px) translateZ(100px) scale(0);
+    }
+}
+
+@keyframes ground-shine {
+    0%, 70% {
+        opacity: 0;
+    }
+    75%, 87% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes mask {
+    0%, 65% {
+        opacity: 0;
+    }
+    66%, 100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background: var(--background);
+}
+
+small {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-family: Arial;
+    max-width: 320px;
+    font-size: 12px;
+    line-height: 19px;
+    z-index: 1;
+    color: #6C7486;
+}
+
+@media(min-width: 481px) {
+    small {
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+@media(max-width: 480px) {
+    small {
+        left: 20px;
+        right: 112px;
+        font-size: 10px;
+        line-height: 17px;
+        transform: translateZ(400px);
+    }
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dribbble {
+    position: fixed;
+    display: block;
+    right: 24px;
+    bottom: 24px;
+}
+
+.dribbble img {
+    display: block;
+    width: 76px;
+}

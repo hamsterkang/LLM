@@ -1,0 +1,394 @@
+* AcademAI-Essay-Rubric */
+
+.asess{
+justify-content: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.essay-criteria-setting-container {
+    display: grid;
+    justify-content: center; /* Center the table horizontally */
+    align-items: center;
+    position: relative; /* Make it relative to its container */
+    height:auto;
+   
+}
+
+.criteria-table-container {
+   overflow-x: auto; /* Allow horizontal scrolling */
+   overflow-y: auto;
+   margin-right:2%;
+   max-width: 1000px;
+   max-height: 400px;
+}
+
+
+.criteria-table-container table {
+    width: auto; /* Allow table to adjust its width based on content */
+}
+
+.criteria-table-container th,
+.criteria-table-container td {
+    padding: 10px; /* Add padding to cells */
+    text-align: center; /* Center align content */
+    min-width: 130px; /* Minimum width for existing columns */
+    
+}
+
+
+.rubric-criterion {
+    font-size:0.8750em;
+    color:#fff;
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+
+}
+
+/* apply style to odd rows */
+.table tbody tr:nth-child(odd) {
+    background-color: #5c8374;
+}
+/* apply style to odd rows */
+.table tbody tr:nth-child(even) {
+    background-color:#9EC8B9;
+}
+/* apply style in the thead */
+.table th {
+    text-align: center;
+}
+
+.criteria-heading {
+    background-color: #092635;
+    font-size: 1.125em;
+    color: #ffffff;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:800;
+}
+
+.levels {
+    color:#ffffff;
+}
+/* apply style in the tbody */
+.predefined-criteria td {
+    color:#fff;
+    font-size:1em;
+    font-family:'Times New Roman', Times, serif;}
+
+.predefined-criteria {
+    color:white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #b5b5b5; /* Change the background color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.table-hover tbody tr:hover td {
+    color: #fff; /* Change text color of all td elements within the hovered row */
+}
+
+.assessment-details {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top:5%;
+  
+}
+
+.assessment-details-ai {
+color:#092635;
+padding:15px;
+font-family: 'Times New Roman', Times, serif;
+box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Bottom-only shadow */
+margin-top:3%;
+border-top:1px solid #ccc;
+}
+
+.assessment-details-plagiarize {
+color:#092635;
+padding:15px;
+font-family: 'Times New Roman', Times, serif;
+box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Bottom-only shadow */
+margin-top:3%;
+border-top:1px solid #ccc;
+    
+}
+
+.rubrics-plagiariaze {
+    font-size:1.175em;
+    font-weight: 800;
+}
+.essay-criteria-heading {
+    text-align: center;
+    margin-bottom: 10px; /* Adjust margin as needed */
+    background-color:#092635;
+    width:50%;
+    margin-top:30px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.essay-criteria-heading h2 {
+    color: #092635; /* Adjust color as needed */
+}
+.rubric-criterion-weight{
+    font-size:1.125em;
+    display:flex;
+    justify-content: center !important;
+    align-items: center !important;
+    color:#fff;
+}
+
+.feedback-container {
+    max-width: 1000px;
+    margin: AUTO;
+}
+
+.assessment, .comments {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadein 1s; /* Animation for fade-in effect */
+    margin-top:5%;
+}
+
+.assessment h2, .comments h2 {
+    color: #092635;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top:2%;
+    border-bottom:solid 2px #1B4242;
+}
+
+.asset {
+    display:flex;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.asset p {
+    flex: 1;
+}
+.rubrics-ai {
+    font-size:1.175em;
+    font-weight: 800;
+}
+.rubrics-ai-explanation {
+    font-size: 1em;
+}
+.comment {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    animation: slidein 1s; /* Animation for slide-in effect */
+    background-color:#1B4242;
+  
+}
+.educators {
+    border-top:2px solid #5c8374;
+    display:flex;
+    justify-content:flex-end;
+    
+}
+.educators-name{
+    margin-bottom: 10px;
+    font-size:24px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#fff;
+    margin-top:2%;
+}
+.comment-text {
+    font-size:1em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#fff;
+}
+
+.comment p strong {
+    color: #fff;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slidein {
+    from { transform: translateY(-20px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}
+
+.feedback-container, .assessment, .comments {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(-20px); /* Start slightly above its final position */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.feedback-container.show, .assessment.show, .comments.show {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide in */
+}
+
+
+.assessment h1{
+    color:#092635;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top:2%;
+    border-bottom:2px solid #092635;
+    margin:0;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #092635;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0c3d56; /* Darker shade when hovered */
+}
+.rubrics {
+    font-size: 1.175em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rubrics-explanation {
+    padding:15px;
+    color:#ffffff;
+    border-left:5px solid #5c8374;
+    font-size: 1em;
+}
+.asset {
+    display:flex;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    background-color:#092635;
+    
+}
+.asset p {
+    flex: 1;
+}
+.plagiarized-works-1 {
+    font-size: 0.875em;
+    font-family: 'Times New Roman', Times, serif;
+    color:blue;
+    font-style: italic;
+}
+
+.plagiarized-works-database {
+  font-weight:600;
+  margin-top:5%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*Provide Feedback to Students */
+.professor-comment {
+    margin-top:8%;
+  
+  
+
+}
+#comment {
+    width:100%;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Clear and prominent box shadow on all sides */
+    margin-bottom:3%;
+    font-family: 'Times New Roman', Times, serif;
+    color:#5c8374;
+    border-left:none;
+    border-right:none;
+    border-bottom: none;
+    border-top: none;
+    
+}
+label[for='comment'] {
+    font-size: 2em;
+    color:#092635;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.btn-for-feedback {
+    display:flex;
+    justify-content: flex-end;
+    margin-bottom:5%;
+}
+.submit-btn-comment {
+    background-color:#092635;
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius:5px;
+    border:none;
+}
+.submit-btn-comment:hover {
+    background-color:#1B4242;
+}
+
+/* Back Arrow */
+.fa-arrow-left {
+    font-size:2.25em;
+    color:#9EC8B9;
+    font-weight: 700;
+    margin-bottom:3%;
+}
+
+/* Hover effect */
+.fa-arrow-left:hover {
+    animation: moveRight 0.6s ease forwards; /* Apply the movement animation */
+    cursor: pointer;
+}
+
+/* Keyframes for moving animation */
+@keyframes moveRight {
+    0% {
+        transform: translateX(0); /* Start at original position */
+    }
+    50% {
+        transform: translateX(15px); /* Move 15px to the right */
+    }
+    100% {
+        transform: translateX(0); /* Return to original position */
+    }
+}
+.back-arrow-section {
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.edit-criteria-btn {
+    background-color: #1B4242;
+    width: 150px;
+    height: 50px;
+    color:#fff;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+}
+
+
+.edit-criteria-btn:hover {
+    background-color: #5c8374;
+    
+}
+
+.edit-criteria-btn:active {
+    background-color: #1B4242;
+    
+}
+
+
+
+.edibtn-score {
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+}

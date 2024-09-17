@@ -1,0 +1,694 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:1em;
+    position:absolute;
+    width: 100%;
+    height:auto;
+  
+}
+
+.useranswer{
+    padding:0%;
+    margin-top:3%;
+    color:#5C8374;
+    
+
+}
+
+.displayanswer {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    margin-top:10%;
+}
+
+.quiz-details {
+    margin-top:5%;
+}
+
+/* Back Arrow */
+.fa-arrow-left {
+    font-size:3em;
+    color:#9EC8B9;
+    font-weight: 700;
+    margin-bottom:3%;
+    
+
+}
+
+/* Hover effect */
+.fa-arrow-left:hover {
+    animation: moveRight 0.6s ease forwards; /* Apply the movement animation */
+    cursor: pointer;
+}
+
+/* Keyframes for moving animation */
+@keyframes moveRight {
+    0% {
+        transform: translateX(0); /* Start at original position */
+    }
+    50% {
+        transform: translateX(15px); /* Move 15px to the right */
+    }
+    100% {
+        transform: translateX(0); /* Return to original position */
+    }
+}
+
+.author-info-section  {
+    padding: 0;
+    height: 72px;
+}
+.author-information{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+}
+
+.author-info {
+    color: #092635;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.green-section {
+    background-color: #1B4242;
+}
+.total-points {
+    font-size: 36px;
+    color: #092635;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.quiz-points {
+ 
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-taker-section {
+    padding: 0;
+    height: 72px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow only at the bottom */
+    border-top:2px solid #1B4242;
+    border-bottom:2px solid #1B4242;
+}
+
+.quiz-title , .quiz-descrip, .subject, .start-date-span, .start-time-span, .end-date-span{
+    font-size: 20px;
+    font-weight: 800;
+    color: #092635;
+}
+
+.start-end-span , .quiz-submit-span , .quiz-time-span {
+    font-size: 20px;
+    font-weight: 800;
+    color: #092635;
+}
+.quiz-details-content p {
+font-size: 20px;
+color: #1B4242;
+font-weight: 800;
+}
+
+.quiz-details-content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-right: none;
+    border-left: none;
+    border-top: none;  
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
+    z-index:1;
+    color:#1B4242;
+    font-family:'Times New Roman', Times, serif;
+    font-size:1em;  
+    padding:20px;
+    
+}
+
+.starttime{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.enddate{
+    margin-bottom: 10px;
+}
+
+.date-info {
+    margin-left: 100px;
+}
+
+
+.quiz-info h3{
+    font-size: 35px;
+    color: #092635;
+}
+
+
+
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 32px;
+    color: #1B4242;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2%;
+    margin-left: 30px;
+}
+.points-multiple {
+    font-size: 32px;
+    color: #5C8374;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2%;
+    margin-right: 30px;
+}
+
+
+.quiz-info {
+    margin-top:5%;
+    width: 700px;
+    box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 0.2); /* Shadow only at the top */
+}
+
+
+.divide-question{
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    color:#ffffff;  
+    background:url(/img/modal-for-essay-rubric.jpg);
+    margin-top:10px;
+}
+
+.correct-questions{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.correctpoints{
+    color: #ffffff;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.points-numbers{
+    margin-left: 6px;
+    font-style: bold;
+    font-size:1.125em ;
+    margin-top: 10px;
+}
+
+.question {
+    margin-bottom: 10px;
+    font-size: 1.125em;
+    margin-left: 60px;
+    margin-right: 20px;
+
+}
+
+.answer-ab{flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
+.answer-cd{flex-direction: row;
+    display: flex;
+    justify-content: center;
+   
+  }
+
+.boxing{
+    border-right:1px solid #092635;
+    border-left: 1px solid #092635;
+    border-top: none;  
+    border-bottom: 1px solid #092635;
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+    height: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 260px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: brightness(1.0) saturate(100%);
+}
+
+.circle {
+    display: inline-block;
+    width: 55px;
+    height: 58px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 1px solid #fff;
+    margin-right: 10px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+} 
+
+
+#wrong-answer {
+    border-radius: 40px;
+    border-right: 1px solid red;
+    border-left: 1px solid red;
+    border-top: none;  
+    border-bottom: 2px solid red;
+
+}
+
+#red-letter{
+    border: 1px solid red;
+    background-color: rgba(248, 39, 39, 0.712);
+    color: #fff;
+}
+
+.answer-choice{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 60px;
+    font-size: 1.125em;
+}
+
+#correct-circle1{
+    background-color: rgba(180, 169, 169, 0.89);
+    color: #fff;
+    border: 1px solid green;
+    background-color: rgba(34, 221, 34, 0.836);
+}
+
+#correct-circle{
+    border: 1px solid green;
+}
+
+#correct{
+    border-radius: 40px;
+    border-right: 1px solid green;
+    border-left: 1px solid green;
+    border-top: none;  
+    border-bottom: 2px solid green;
+}
+
+.fa-check, .fa-times{
+    animation: iconAnimation 0.5s ease-in-out;
+}
+
+
+.fa-check, .fa-times{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+@keyframes iconAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+.identificationcon {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    color:#ffffff;  
+    background:url('/img/modal-for-essay-rubric.jpg');
+}
+
+.halfidentification {
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.125em;
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.divide-question1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.question1{
+    margin-right: 20px;
+}
+
+.student-answer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border-bottom: 2px solid green;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-right: 20px;
+   
+}
+
+.identification-answer {
+    font-size: 1.125em;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Add space between items */
+    margin-bottom: 20px;
+}
+
+.identification-answer1 {
+    font-size: 20px;
+    width: 450px;
+    display: flex;
+    flex-direction: row; /* Align items vertically */
+    justify-content:center; /* Add space between items */
+    margin-bottom: 20px;
+    border-bottom: 2px solid red;
+    border-radius: 20px;
+}
+
+.identification-check {
+    color: green;
+    font-size: 20px;
+}
+.fa-solid.identification-check, .fas.identification-check {
+    color: green;
+    font-size: 20px;
+}
+.fa-solid.identification-wrong, .fas.identification-wrong {
+    color: red;
+    font-size: 20px;
+}
+.identification-wrong {
+    color: red;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#student-wrongr {
+
+    flex-direction: column;
+    display: flex;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.822);
+   
+}
+
+#identification-correct{
+    font-size: 20px;
+    color: green;
+    margin-bottom:10px;
+
+  
+}
+
+.rome{
+    font-size: 20px;
+}
+
+.correct-answer{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.check-answer{
+font-size: 20px;
+margin-right:10px ;
+}
+
+
+
+
+/* Background animation keyframes */
+@keyframes backgroundAnimation {
+    0% { background-color: #5C8374; }
+    50% { background-color: #1B4242; }
+    100% { background-color: #092635; }
+}
+
+/* Border animation keyframes */
+@keyframes borderAnimation {
+    0% { background-color: #5C8374; }
+    50% { background-color: #1B4242; }
+    100% { background-color: #092635; }
+}
+
+.essay-container{
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    color:#ffffff;  
+    background:url('/img/modal-for-essay-rubric.jpg');
+    margin-top:10px;
+}
+
+.question2{
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question3{
+    display: flex;
+     justify-content: center;
+     flex-direction: row;
+     align-items: center;
+ }
+
+.correctpoints1{
+color: #fff;
+font-style: italic;
+font-size: 20px;
+margin-left: 100px;
+}
+
+.points-numbers1{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.question-number{
+font-size: 20px;
+color: #fff;
+margin-left: 180px;
+}
+
+.question-text{
+width: 500px;
+font-size: 1.1250em;
+display: flex;
+text-align: center;
+justify-content: center;
+font-weight: 800;
+
+}
+
+.student-answer2{
+width: 600px;
+font-size: 1em;
+ border-bottom: 1px solid #9EC8B9;
+ margin-top: 30px;
+ text-align: justify;
+   
+}
+
+.rubrics{
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+border-radius: 20px;
+border-right: 1px solid #092635;
+border-left: 1px solid #092635;
+padding-left: 50px;
+padding-right: 50px;
+box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+margin-top: 30px;
+background-color: rgba(0, 0, 0, 0.5);
+filter: brightness(1.0) saturate(100%);
+
+}
+
+.rubric-item{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+
+}
+
+.score{
+    margin-left: 20px;
+}
+
+.button {
+    height: 60px;
+    width: 220px;
+    margin-top: 20px;
+    background-color: #1B4242;
+   border-radius: 10px;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration:none;
+   border: none;
+}
+
+.button a {
+   color: #fff;
+   text-decoration:none;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.button:hover {
+    background-color: #1B4242;
+
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.ripple-effect {
+    position: absolute;
+    background: radial-gradient(circle, transparent 1%, rgba(255, 255, 255, 0.3) 1%) center/15000%;
+    transition: background-size 0.3s;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: scale(0);
+    z-index: 1;
+}
+
+.button:hover .ripple-effect {
+    background-size: 300%;
+    transform: scale(1);
+}
+.fa-solid,
+.fas {
+    color:#ddd;
+}
+
+.profile-student {
+    display:flex;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    background-color: #092635;
+}
+.profile-pic {
+    border-radius:100%;
+    width:80px;
+    height:80px;
+}
+.profile-identity {
+    color:#092635;
+    margin-left:2%;
+}
+
+.profile-name {
+    font-size:18px;
+    font-weight: 700;
+    color: #fff;
+    margin-top:8%;
+    margin-bottom:0;
+
+}
+.email {
+    color: #fff;
+    font-style: italic;
+    margin-top: 3%;
+}
+
+.profile-section {
+    display:flex;
+    margin-left:2%;
+}
+
+/* Resetting Bootstrap styling for the link */
+.custom-leaderboard-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* Custom styles for the link */
+.custom-leaderboard-link {
+    font-size: 16px; /* Change font size as needed */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    margin-right: 2%;
+    text-decoration: none;
+}
+
+/* Custom styles for the icon */
+.custom-leaderboard-icon {
+    font-size: 24px; 
+    color: #9EC8B9; 
+    animation: none; 
+}
+
+.custom-leaderboard-link:focus,
+.custom-leaderboard-link:active,
+.custom-leaderboard-link:hover {
+    outline: none; /* Removes any outline or underline */
+    text-decoration: none;
+    color: inherit; /* Ensures the color stays consistent */
+}
+
+.custom-leaderboard-link:hover .custom-leaderboard-icon {
+    color: #5C8374; /* Change color on hover */
+}
+
+
+/* Optionally, you can add your own animation */
+@keyframes custom-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.custom-leaderboard-icon.animated {
+    animation: custom-bounce 0.5s infinite;
+}

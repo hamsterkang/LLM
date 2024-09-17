@@ -1,0 +1,275 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.formultiplechoice {
+    justify-content: center;
+    display: grid;
+    align-items: center;   
+}
+
+.insidemultiplechoice {
+    flex-direction: column;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: 100vh;
+    z-index: 1;
+    background: url('/img/modal-for-essay-rubric.jpg');
+    color:#fff;
+    width:auto;
+   
+
+}
+
+.fa-volume-up {
+   
+    color: #092635;
+}
+.avatar {
+    display:flex;
+}
+@keyframes jump {
+    0%, 100% {
+      transform: translateY(0); /* Start and end at the same position */
+    }
+    50% {
+      transform: translateY(-10px); /* Move up by 10px at the middle of the animation */
+    }
+  }
+  
+  .jumping-text {
+    display: inline-block;
+    font-size: 18px; /* Adjust font size as needed */
+    color: #333; /* Adjust color as needed */
+    margin-top: 20%; /* Space between image and text */
+    animation: jump 1s ease-in-out infinite; /* 1s duration, ease-in-out timing, infinite loop */
+    color:#1B4242;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 24px;
+    letter-spacing: 8px;
+    font-weight: bold;
+
+   
+  }
+  
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.author-info {
+    font-weight: bold;
+    font-size:1em;
+ 
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size:2.25em;
+}  
+
+
+.date-time-info {
+    font-style: italic;
+    margin-left: 150px;
+    font-size:1em;
+
+    font-weight: bold;
+}
+
+main {
+    margin: 50px auto;
+    padding: 0 20px;
+    border-radius: 10px;
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.descrip, .subject {
+    font-size:1.125em;
+}
+
+#timer{
+    margin-left: 380px;
+    color: #fff;
+}
+.quiz-container {
+    max-width: 600px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: brightness(1.0) saturate(100%);
+
+}
+
+.question {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.question-number {
+    font-weight: bold;
+}
+
+.answers {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.answer-text{
+    margin-top: 10px;
+}
+
+.answer-container {
+    display: flex;
+    margin-bottom: 12px;
+height: 50px;
+border-radius: 50px;
+width: 250px;
+margin-right: 20px;
+border-top: none;
+box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: solid 1px #092635;
+    border-right: solid 1px #092635;
+}
+
+.answer-text {
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.answerab{
+    display: flex;
+    flex-direction: row;
+}
+
+.answercd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.radio-custom {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid #5C8374;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    height: 48px;
+    margin-right: 22px;
+    width: 50px;
+    line-height: 20px;
+    background-color:#5C8374;
+    color:#fff;
+}
+
+.radio-custom:hover {
+    background-color: #1B4242;
+    color:#fff;
+}
+
+input[type="radio"] {
+    display: none; /* Hide the default radio buttons */
+}
+
+/* Adjusted selector to target the .radio-custom element when radio is checked */
+input[type="radio"]:checked + .radio-custom::before {
+    background-color: #009688;
+    color: #fff;
+}
+
+.radio-custom::before {
+    content: attr(data-letter);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensure the pseudo-element has rounded corners */
+    background-color: transparent; /* Set initial background color to transparent */
+    border: 0.5px solid #092635; /* Move the border styling here */
+    box-sizing: border-box; /* Ensure the border is included in the element's dimensions */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adjusted selector to target the .radio-custom element when radio is checked */
+input[type="radio"]:checked + .radio-custom::before {
+    background-color: #092635; /* Change background color when checked */
+    color: #fff;
+}
+
+.next-button {
+    background-color: #1B4242;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 45px;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 440px;
+    margin-bottom: 20px;
+}
+
+.next-button:hover {
+    background-color:#5C8374;
+}
+
+.fa-arrow-right{
+    margin-left: 5px;
+}.next-icons a {
+    text-decoration: none;
+}
+
+
+
+.upper-avatar-sound-section {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:5%;
+}
+#avatar {
+    width:120px;
+    height:100px;
+    
+}
+
+

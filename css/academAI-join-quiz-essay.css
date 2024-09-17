@@ -1,0 +1,470 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.mcq-container {
+    position:absolute;
+    width: 100%;
+    height:auto;
+    background-size: 100px 100px;
+}
+
+
+.fa-volume-up {
+   
+    color: #092635;
+}
+.avatar {
+    display:flex;
+}
+@keyframes jump {
+    0%, 100% {
+      transform: translateY(0); /* Start and end at the same position */
+    }
+    50% {
+      transform: translateY(-10px); /* Move up by 10px at the middle of the animation */
+    }
+  }
+  
+  .jumping-text {
+    display: inline-block;
+    font-size: 18px; /* Adjust font size as needed */
+    color: #333; /* Adjust color as needed */
+    margin-top: 20%; /* Space between image and text */
+    animation: jump 1s ease-in-out infinite; /* 1s duration, ease-in-out timing, infinite loop */
+    color:#1B4242;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 24px;
+    letter-spacing: 8px;
+    font-weight: bold;
+
+   
+  }
+
+.essaysort {
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+
+.essaydisplay {
+    flex-direction: column;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    z-index: 1;
+    background: url('/img/modal-for-essay-rubric.jpg');
+    filter: brightness(1.0) saturate(100%);
+    color:#fff;
+   
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+
+.author-info {
+    font-weight: bold;
+    font-size:1em;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size:2.25em;
+}  
+
+
+.date-time-info {
+    font-style: italic;
+    margin-left: 150px;
+    font-size:1em;
+}
+
+main {
+    margin: 50px auto;
+    padding: 0 20px;
+    border-radius: 10px;
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.descrip, .subject {
+    font-size:1.125em;
+}
+
+
+.toptimer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+#timer{
+    margin-right: 120px;
+    color: #fff;
+}
+
+.containeranswer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: brightness(1.0) saturate(100%);
+}
+
+.question {
+    margin-bottom: 20px;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+    display: flex;
+}
+
+.question a{
+    text-decoration: none;
+    color: #fff;
+    font-style: italic;
+    margin-left: 120px;
+    margin-top: none;
+}
+
+.question a:hover{
+    text-decoration:underline #092635;
+}
+
+.question-number {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 1px;
+
+}
+
+
+.answer textarea {
+    width: 500px;
+    padding: 10px;
+    height: 80px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    resize: vertical; /* Allow vertical resizing */
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 0.5px solid #092635;
+    border-left: none;
+    border-top: none;
+    border-right:none;
+    background: none;
+    color: #fff;
+}
+.answer textarea {
+    width: 500px;
+    padding: 10px;
+    height: 80px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    resize: vertical; /* Allow vertical resizing */
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 0.5px solid #092635;
+    border-left: none;
+    border-top: none;
+    border-right:none;
+    background: none;
+    color: #fff;
+}
+.answer textarea {
+    width: 500px;
+    padding: 10px;
+    height: 80px;
+    border: 1px solid #ccc;
+    resize: vertical; /* Allow vertical resizing */
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #5C8374;
+    border-left: none;
+    border-top: none;
+    border-right:none;
+    background: none;
+    color: #fff;
+ 
+}
+
+
+#answeressay:focus {
+    outline: none;
+    /* Remove default focus outline */
+}
+
+.half{
+    margin-top: 10px;
+    color: #fff;
+    font-style: italic;
+}
+
+
+.fileupload {
+    border-right:none;
+    border-bottom:none;
+    border-left: none;
+    border-top: none;
+    height: 100px;
+    width: 520px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    text-align:center;
+}
+
+.fileupload label{
+    margin-top: 10px;
+}
+
+.file-input-wrapper {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition property */
+    bottom:5%;
+}
+
+.file-input-wrapper input[type='file'] {
+    opacity: 0;
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+}
+
+.file-input-wrapper button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    background-color: #1B4242;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Added transition for hover effect */
+    
+}
+
+.file-input-wrapper button:hover {
+    background-color: #5C8374;
+}
+
+@keyframes buttonAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.animate {
+    animation: buttonAnimation 0.5s ease-in-out;
+}
+
+.submit-button {
+    background-color: #1B4242;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 45px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 370px;
+    margin-bottom: 20px;
+}
+
+.submit-button:hover {
+    background-color:  #5C8374;
+}
+
+.fa-upload{
+    margin-right: 7px;
+}
+
+.next-icons a {
+    text-decoration: none;
+}
+
+
+
+.upper-avatar-sound-section {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:5%;
+}
+#avatar {
+    width:120px;
+    height:100px;
+    
+}
+
+
+
+.toptimer a:hover {
+    text-decoration: none;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    height: 400px; /* Set the height of the form */
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Hide overflow to prevent background from leaking */
+  }
+  
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    color: #092635;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  
+  .half-image {
+    width: 100%;
+    height: 50%; /* Set the height to cover the top half of the form */
+    float: left;
+  }
+  
+  .center-image {
+    width: 100px; /* Set the width of the circle image */
+    height: 100px; /* Set the height of the circle image */
+    border-radius: 50%; /* Make it a circle */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.0); /* Initial scale for the animation */
+    animation: pulse 2s infinite alternate, sparkling 2s infinite alternate; /* Animation effect */
+    background-color: #9EC8B9;
+  }
+  
+  @keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1.0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+  
+  @keyframes sparkling {
+    0% {
+        background-color: #092635;
+        box-shadow: 0 0 10px rgba(9, 38, 53, 0.8);
+    }
+    50% {
+        background-color: #1B4242;
+        box-shadow: 0 0 20px rgb(27, 66, 66, 0.8);
+    }
+    100% {
+        background-color: #5C8374;
+        box-shadow: 0 0 10px rgba(92, 131, 116, 0.8);
+    }
+  }
+  
+  .submit-content {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+  .submit-text {
+    margin-bottom: 30px;
+    color: #092635;
+    font-weight: bold;
+    font-size: 1.125em;
+    font-family: 'Times New Roman', Times, serif; 
+   
+  }
+  
+
+.yes-btn-section {
+    display:flex;
+    justify-content: center;
+}
+  .cancel-btn{
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 1em;
+    background-color:#1B4242;
+  }
+  
+  
+  .yes-btn{
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 1em;
+    background-color:#092635
+  }
+  
+  .yes-btn:hover,
+  .cancel-btn:hover{
+    color: #5C8374;
+  }
+  
+  .submit-content a {
+    text-decoration:none;
+    
+  }
+  .modal-backdrop.show {
+    opacity: .5;
+    z-index: 0;
+  }

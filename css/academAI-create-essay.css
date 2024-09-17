@@ -1,0 +1,870 @@
+
+.shortcontainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* z-index: 1001; */
+    width: 100%;
+    flex-direction: column;
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.submitformshort {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index:1;
+    width:60%;
+    border-radius:20px;
+    background:url('/img/one.jpg');
+    padding-bottom:25px;
+    padding-top:25px;
+
+}
+
+.shortcontainer h1{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size:3em;
+    color:#092635;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.limit-con{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+    color: white;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.limitconpar{
+  color: #fff;
+  margin-left:40px;
+  margin-bottom: 40px;
+  font-style: italic;
+  margin-bottom: 4px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.8750em;
+
+
+}
+
+label[for="time-limit"]{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: none;
+}
+
+label[for="num-points"]{
+    margin-left: 2%;
+}
+label[for="num-quiz"]{
+    margin-left: 2%;
+}
+
+
+.col {
+   margin-top:3%;
+   
+}
+
+.minutes-choice option {
+    background-color:#1B4242;
+}
+
+.minutes-choice{
+    flex-direction: row;
+    display: flex;
+    margin-right: 40px;
+    width: 600px;
+    margin-bottom:0;
+}
+
+
+#time-limit-minutes{
+    height: 45px;
+    box-shadow: 20px 0px 16px 1px rgba(0, 0, 0, 0.1);
+   border-top: none;
+   border-left:none;
+   border-bottom: 1px solid #092635;
+    border-radius: 10px;  
+    width:180px;  
+}
+
+#time-limit-seconds{
+    border-right: none;
+     border-top: none;
+    border-left:none;
+     border-radius: 10px;
+     width: 180px;
+     background-color: rgba(0, 0, 0, 0.5);
+     filter: brightness(1.0) saturate(100%);
+     color:white;
+     font-size:1em;
+     font-family:'Times New Roman', Times, serif;
+     
+}
+
+.dropdownminute option {
+    font-size: 1em; /* Adjust font size */
+    font-weight: bold; /* Adjust font weight */
+    color: #fff; /* Adjust text color */
+    background-color: #1B4242; /* Adjust background color */
+    font-family:'Times New Roman', Times, serif;
+}
+
+.numberitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 2%;
+    font-size: 1em;
+  color: white;
+   font-family: 'Times New Roman', Times, serif;
+}
+.number-of-quiz {
+    display: grid;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#num-quiz{
+    height:50px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left:none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+    margin-left:1%;
+    
+}
+.numpoints p{
+ color: #fff;
+  margin-left:45px;
+  margin-bottom: 40px;
+  font-style: italic;
+  margin-bottom: 4px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.8750em;
+}
+#num-points{
+    height:50px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left:none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+    margin-left:2%;
+}
+#limit-word{
+    height:45px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left:none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+    margin-left:5%;
+}
+
+label[for="limit-word"] {
+    margin-left: 7%;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:16px;
+    margin-top:2%;
+}
+
+
+label[for="minimum"] {
+    margin-left: 7%;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:16px;
+    margin-top:1%;
+  }
+  
+
+  label[for="maximum"] {
+    margin-left: 10%;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:16px;
+    margin-top:1%;
+  }
+  #minimum{
+    height:40px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left:none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+#maximum{
+    height:40px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left:none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+    margin-left:5%;
+}
+
+.typequestionall{
+    justify-content: center;
+    display: "flex";
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 60%;
+    background:url('/img/one.jpg');
+
+}
+
+.typequestion{
+    display: flex;
+    justify-content: center;
+    display:"flex";
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.typequestionhere{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    
+
+}
+.dropdownminute {
+    margin-right: none;
+    margin-bottom: none; 
+
+}
+
+/* Styles for the input box */
+.input-box {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styles for the number */
+.number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    margin-top: 17px;
+    height: 30px;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 5px;
+    margin-top: 25px;
+    background-color: #092635;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    font-size: 0.8750em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Styles for the delete icon */
+.delete-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #092635;
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 20px; /* Color of the delete icon */
+}
+
+/* Styles for the rubric link */
+.rubric-icon {
+    position: absolute;
+    top: 22px;
+    right: 30px; /* Adjust the positioning as needed */
+    cursor: pointer;
+    color: #092635;
+    padding: 5px;
+    font-size: 14px;
+
+}
+
+/* Styles for the rubric link on hover */
+.rubric-icon:hover {
+    color: #0f4c75; /* Change color on hover */
+}
+
+/* Styles for the rubric link */
+.rubric-link {
+    text-decoration: none;
+    color: #092635;
+    font-style: italic;
+    font-size: 1.125em;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+
+    
+}
+
+/* Styles for the rubric link on hover */
+.rubric-link:hover {
+    text-decoration: none;
+    color:#1B4242;
+
+}
+
+/* Additional styling for the input field */
+.input-box input[type="text"] {
+    padding-left: 20px; /* Add padding to accommodate the number */
+    padding-right: 20px; /* Add padding to accommodate the delete icon */
+}
+
+
+.dropdownminute:last-child {
+    margin-right: 0;
+}
+
+.dropdownminute label {
+    margin-bottom: 5px;
+}
+
+.dropdownminute input[type="text"],
+.dropdownminute input[type="number"],
+.dropdownminute select {
+    width: 90px;
+    height: 38px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #092635;
+}
+
+.dropdownminute .dropdown {
+    display: flex;
+    align-items: center;
+    margin-top: none; /* Align items vertically */
+}
+
+.dropdownminute .dropdown select {
+    margin-left: none;
+}
+
+#question{
+    width: 520px;
+    height:130px ;
+    margin-top: 20px;
+}
+ 
+#question::placeholder{
+   font-size:1em;
+   font-family: 'Times New Roman', Times, serif;
+   color:#1B4242;
+}
+#time-limit{
+  height: 40px;
+  width: 205px;
+  border-right: 2px solid #092635;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  color: #1B4242;
+}
+#points{
+  height: 40px;
+  width: 205px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  color: #1B4242;
+}
+
+#time-limit-unit{
+    border-right: solid 2px #092635;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    width: 105px;
+    background-color: #092635;
+  }
+
+  .word-limit-count{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.word-limit-per {
+    display: flex;
+}
+
+#minimum-per{
+    height:40px;
+    width: 257px;
+    border-radius: 5px;
+    border-top: none;
+    border-left:none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+  
+}
+
+#maximum-per{
+    height:40px;
+    width: 257px;
+    border-radius: 5px;
+   
+    border-top: none;
+    border-left:none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;    
+    font-family:'Times New Roman', Times, serif;
+    font-size:16px;
+    color: #092635;
+}
+#minimum-per::placeholder{ 
+    font-family:'Times New Roman', Times, serif;
+    font-size:16px;
+}
+
+#time-limit:focus,
+#points:focus,
+#question:focus,
+#time-limit-unit:focus,
+#answer:focus
+{
+    outline: none;
+    /* Remove default focus outline */
+    box-shadow: 0 2px 1px 2px #092635;
+    /* Apply custom box shadow */
+}
+
+#answer {
+  height: 80px;
+  width: 520px;
+  border-bottom: solid 0.5px #092635;
+  border-right: solid 0.5px #092635;
+  box-shadow: 0 0px 2px 0px #092635;
+  margin-top: 5px;
+  margin-bottom: 15px;
+    display: block; /* Set the input field to display as a block */
+    word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
+}
+
+#answer::placeholder {
+   font-size:1em;
+   color:#1B4242;
+   font-family:'Times New Roman', Times, serif;
+}
+
+
+#add-answer-btn{
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: brightness(1.0) saturate(100%);
+    height: 40px;
+    width: 200px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#add-answer-btn:hover{
+    background-color: #1B4242;
+    height: 40px;
+    width: 200px;
+}
+
+.orupload{
+    margin-top: 20px;
+   
+    
+}
+
+.orupload h3{
+font-size: 1em;
+color: #fff;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 800;
+
+}
+
+.fileupload{
+    border-right: 0.5px solid #092635;
+    border-bottom: 0.5px solid #092635;
+    border-left: none;
+    border-top: none;
+    height: auto;
+    width: 520px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    background-color:#fff;
+    color:#1B4242;
+    font-size:1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.file-input-wrapper {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition property */
+}
+
+.file-input-wrapper input[type='file'] {
+    opacity: 0;
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+}
+
+.file-input-wrapper button {
+  font-size: 1em;
+  padding: 10px 20px;
+  color: white;
+  background-color: #092635;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.file-input-wrapper button:hover {
+    background-color: #0f4c75;
+}
+
+
+/* Styles for the back button */
+
+.button-container {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 65px;
+    width:100%;
+   
+}
+
+.back-button {
+    background-color: #1B4242;
+    color: white;
+    padding: 10px 20px;
+    height: 45px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.back-button a {
+    color: white;
+    text-decoration: none; /* Remove default underline */
+}
+
+.back-button:hover {
+    background-color:  #5C8374;
+}
+
+/* Styles for the next button */
+.next-button {
+    background-color: #1B4242;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 45px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.next-button:hover {
+    background-color:  #5C8374;
+}
+
+
+.next-button i {
+    margin-left: 5px;
+}
+.next-icons a {
+    color: white;
+    text-decoration: none; /* Remove default underline */
+}
+
+
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    height: 400px; /* Set the height of the form */
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Hide overflow to prevent background from leaking */
+}
+
+.btn-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    color: #092635;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.half-image {
+    width: 100%;
+    height: 50%; /* Set the height to cover the top half of the form */
+    float: left;
+}
+
+.center-image {
+    width: 100px; /* Set the width of the circle image */
+    height: 100px; /* Set the height of the circle image */
+    border-radius: 50%; /* Make it a circle */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.0); /* Initial scale for the animation */
+    animation: pulse 2s infinite alternate, sparkling 2s infinite alternate; /* Animation effect */
+    background-color: #9EC8B9;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1.0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+@keyframes sparkling {
+    0% {
+        background-color: #092635;
+        box-shadow: 0 0 10px rgba(9, 38, 53, 0.8);
+    }
+    50% {
+        background-color: #1B4242;
+        box-shadow: 0 0 20px rgb(27, 66, 66, 0.8);
+    }
+    100% {
+        background-color: #5C8374;
+        box-shadow: 0 0 10px rgba(92, 131, 116, 0.8);
+    }
+}
+
+
+.submit-content {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.submit-text {
+    margin-bottom: 30px;
+    color: #092635;
+    font-weight: bold;
+    font-size: 1.125em;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+
+.yes-no {
+    display:flex;
+    justify-content: center;
+}
+.cancel-btn{
+ 
+padding: 10px 33px;
+    /* margin: 0 10px; */
+    color: #fff;
+    /* border-radius: 5px; */
+    font-size: 1em;
+   
+    height: 40px;
+    background-color: #1B4242;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+.yes-btn{
+    padding: 8px 33px;
+    /* margin: 0 10px; */
+    color: #fff;
+    /* border-radius: 5px; */
+    font-size: 1em;
+    background-color: #092635;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+ 
+}
+
+.yes-btn:hover
+{
+
+    color: #5C8374;
+}
+.cancel-btn:hover {
+    color:#092635;
+}
+.submit-content a {
+    text-decoration:none;
+    
+}
+
+.modal-backdrop.show {
+    opacity: .5;
+    z-index: 0;
+  }
+
+
+/* Addition section  */
+
+.add-section {
+    display: none;
+    position: fixed; /* Or absolute depending on your layout */
+    bottom:135px;
+    right: 300px; /* Align it to the right */
+    margin: 20px; /* Add some spacing if needed */
+    /* Add any other styling as required */
+}
+
+
+.fa-plus-circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: #ffff;
+    color: #1B4242;
+    font-size: 50px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    position: sticky;
+    top: 20px; /* Set the sticky offset (adjust as needed) */
+    /* Add animation */
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating effect on hover */
+.fa-plus-circle:hover {
+    color: #5C8374;
+}
+
+/* Define the keyframes for the floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Starting and ending point */
+    }
+    50% {
+        transform: translateY(-10px); /* Float up at the middle of the animation */
+    }
+}
+
+.date {
+    margin-left:3%;
+}
+/*containerdate*/
+#start-time, #end-time, #start-date, #end-date {
+    height: 50px;
+    width: 280px;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.separateform {
+    border-radius: 20px;
+    margin-bottom: 30px;
+    flex-direction: row;
+    display: flex;
+}
+
+.containerdate, .containerendate {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.date-section-start, .dateend {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-top:0;
+}
+
+/*containerdate*/

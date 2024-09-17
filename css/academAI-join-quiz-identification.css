@@ -1,0 +1,230 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.displayshort {
+    justify-content: center;
+    display: grid;
+    align-items: center;
+  
+}
+
+.displayword {
+    flex-direction: column;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100vh;
+    z-index:1;
+    background: url('/img/modal-for-essay-rubric.jpg');
+    color:#fff;
+    width:auto;
+}
+.fa-volume-up {
+   
+    color: #092635;
+}
+.avatar {
+    display:flex;
+}
+@keyframes jump {
+    0%, 100% {
+      transform: translateY(0); /* Start and end at the same position */
+    }
+    50% {
+      transform: translateY(-10px); /* Move up by 10px at the middle of the animation */
+    }
+  }
+  
+  .jumping-text {
+    display: inline-block;
+    font-size: 18px; /* Adjust font size as needed */
+    color: #333; /* Adjust color as needed */
+    margin-top: 20%; /* Space between image and text */
+    animation: jump 1s ease-in-out infinite; /* 1s duration, ease-in-out timing, infinite loop */
+    color:#1B4242;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 24px;
+    letter-spacing: 8px;
+    font-weight: bold;
+
+   
+  }
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.author-info {
+    font-weight: bold;
+    font-size:1em;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size:2.25em;
+}  
+
+
+.date-time-info {
+    font-style: italic;
+    margin-left: 150px;
+    font-size:1em;
+}
+
+main {
+    margin: 50px auto;
+    padding: 0 20px;
+    border-radius: 10px;
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.descrip, .subject {
+    font-size:1.125em;
+}
+
+
+#timer{
+    margin-top: 1px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.containeranswer {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: brightness(1.0) saturate(100%);
+}
+
+.question {
+    margin-top: none;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-number {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.question-text {
+    margin: 0;
+}
+
+
+.answer label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+.answer input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    height: 70px;
+    width: 350px;
+    border-bottom: 2px solid #5C8374;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    color:#fff;
+}
+
+
+
+
+#answerword:focus {
+    outline: none;
+    /* Remove default focus outline */
+  
+    /* Apply custom box shadow */
+}
+
+.next-button {
+    background-color: #1B4242;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 45px;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 400px;
+    margin-bottom: 20px;
+}
+
+.next-button:hover {
+    background-color:#5C8374;
+}
+
+.fa-arrow-right{
+    margin-left: 5px;
+}
+
+
+
+.upper-avatar-sound-section {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:5%;
+}
+#avatar {
+    width:120px;
+    height:100px;
+    
+}
+.avatar-container {
+    position: relative; /* Position the avatar */
+    width: 100px; /* Adjust width as needed */
+    animation: walk 4s linear infinite alternate; /* Define the animation */
+}
+
+@keyframes walk {
+    0% {
+        transform: translateX(0); /* Initial position */
+    }
+    100% {
+        transform: translateX(calc(100% - 100px)); /* Move the avatar to the right */
+    }
+}
+
+
+.next-icons a{
+    text-decoration:none;
+}

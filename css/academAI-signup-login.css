@@ -1,0 +1,314 @@
+.bg-video {
+    width:400px;
+    margin-left:140px;
+    margin-bottom: 100px;
+    margin-top: 90px;
+    
+    
+}
+
+.signup-section {
+    display:flex;
+    justify-content: center;
+}
+.signup-left {
+    border-radius: 10px;
+    width: 620px;
+    margin-top: 5%;
+    height: 750px;
+}
+
+.signup-banner {
+    height:700px;
+}
+
+
+.row-signup {
+    width:80%;
+    margin-top:5%;
+}
+.slide {
+    position: absolute;
+    margin-top:10%;
+    display:flex;
+    background-position: center;
+    width:1150px;
+    height:740px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom:5%;
+}
+
+
+
+.slide1 .bg-video {
+       width: 100%;
+       margin: 0;
+       padding: 0;
+       background-size: cover;
+       box-sizing: border-box;
+       height: 100%;
+       object-fit: cover;
+       border-radius:10px; 
+}
+
+
+
+.signup-left form input {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.signup-left form input::placeholder{
+   color: #1b4242;
+  
+}
+
+
+.btn-create-account{
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    background-color:#092635;
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+    border:none;
+}
+
+
+.btn-create-account:hover
+ {
+    background-color:#1b4242;
+}
+.btn-create-account:active,
+.btn-create-account:focus {
+    background-color:#5C8374;
+}
+.already-have-account {
+    font-family: 'Times New Roman', Times, serif;
+    color:#092635;
+    font-size:18px;
+    font-weight: bold;
+
+}
+.brand-color {
+    color: #092635;
+    text-decoration:none;
+    font-size:48px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bolder;
+} 
+
+.brand-color-log-in {
+    text-decoration:none;
+    font-size:18px;
+    font-family: 'Times New Roman', Times, serif;
+    color:  #9ec8b9;
+
+}
+
+.brand-color-log-in:hover {
+    text-decoration:none;
+    color:#1b4242;
+} 
+
+.text-danger{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+/*modal*/
+.modal-content-duplicate-email {
+    background:url('/img/blue-2.png' );
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Change the close button color */
+.btn-close-duplicate-email {
+    color:#fff;
+    border: none;
+    width: 1em;
+    height: 1em;
+    opacity: 1;
+}
+.modal-body-sucessful-modal {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-body-duplicate-email {
+ display: flex;
+justify-content: center;
+}
+.modal-content-sucessfully-created {
+    background:url('/img/blue-2.png' );
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn-go-to-login{
+    background-color: rgb(92, 131, 116,0.5) !important;
+    filter: brightness(1.0) saturate(100%) !important;
+    width:100%;
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+}
+.btn-go-to-login:hover{
+    background-color: rgb(158, 200, 185,0.5) !important;
+    filter: brightness(1.0) saturate(100%) !important;
+    color:#fff;
+    text-decoration: none;
+}
+.OK-btn-error-email {
+    background-color: rgb(92, 131, 116,0.5) !important;
+    filter: brightness(1.0) saturate(100%) !important;
+    width:100%;
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+}
+
+.OK-btn-error-email:hover{
+    background-color: rgb(158, 200, 185,0.5) !important;
+    filter: brightness(1.0) saturate(100%) !important;
+   
+}
+.btn-close::before {
+    color: #fff !important;
+    opacity: 1;
+}
+
+/* LoG-IN */
+
+.dont-have-account {
+    font-family: 'Times New Roman', Times, serif;
+}
+.user-login {
+    background-color: rgb(9, 38, 53,1) !important;
+    border-radius: 10px;
+    width:60%;
+}
+
+.user-login form input {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif
+}
+/* Navigation bar*/
+.signup-page .navigation-bar {
+    background-color: #092635 !important;;/* Set your specific background color */
+    /* Add any other specific styles you want for the navigation bar on the sign-up page */
+}
+
+
+.login-page .navigation-bar {
+    background-color: #092635 !important;;/* Set your specific background color */
+    /* Add any other specific styles you want for the navigation bar on the sign-up page */
+}
+
+.signup-section {
+    display:flex;
+    justify-content: center;
+}
+
+
+
+.login-left {
+    border-radius: 10px;
+    width: 620px; 
+    margin-top: 150px;
+}
+
+
+.login-left form input {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.login-left form input::placeholder{
+   color: #1b4242;
+  
+}
+
+
+.btn-log-in{
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    background-color:#092635;
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+    border:none;
+}
+
+
+
+
+.btn-log-in:hover{
+    background-color:#1b4242;
+   
+}
+
+
+.btn-log-in:active,
+.btn-log-int:focus {
+    background-color: #5C8374; 
+}
+.dont-have-account{
+    font-family: 'Times New Roman', Times, serif;
+    color:#092635;
+    font-size:18px;
+    font-weight: bold;
+}
+
+.brand-color-sign-in-here {
+    text-decoration:none;
+    font-size:18px;
+    font-family: 'Times New Roman', Times, serif;
+    color:  #9ec8b9;
+}
+
+.brand-color-sign-in-here:hover {
+    color:  #5C8374;
+    text-decoration:none;
+} 
+
+
+
+.login-section {
+    display:flex;
+    justify-content: center;
+}
+
+.slide-login {
+    position: absolute;
+    margin-top:10%;
+    display:flex;
+    background-position: center;
+    width:1150px;
+    height:600px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom:5%;
+}
+
+.slide2 .bg-video {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100%;
+    object-fit: cover;
+    border-radius:10px; 
+}
+

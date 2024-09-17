@@ -1,0 +1,945 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.set-container {
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   margin-bottom: 20px;
+}
+
+.submitform {
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    z-index:1;
+}
+
+.submitform h1{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color:#092635;
+    font-size:3em;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.separateform { 
+    border-radius: 20px;
+    margin-bottom: 30px;
+    flex-direction: row;
+    display: flex;
+}
+
+.separate {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 105px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    color:#fff;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif; 
+    width:80%;
+    background:url('/img/one.jpg');
+    padding:25px;
+}
+
+
+
+
+.containerdate,
+.containerendate {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.date,
+.dateend {
+    display: flex;
+    flex-direction: column;
+    margin-left:15%;
+
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+#start-time,
+#end-time,
+#start-date,
+#end-date {
+    height: 50px;
+    width: 280px;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+#start-time:focus,
+#time-limit-seconds:focus,
+#time-limit-minutes:focus,
+#end-time:focus,
+#start-date:focus,
+#end-date:focus {
+    outline: none;
+    /* Remove default focus outline */
+    box-shadow: 0 2px 1px 2px #092635;
+    /* Apply custom box shadow */
+}
+
+
+
+.limit-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Added to align items in a column */
+    width: 100%;
+    margin-left:2%;
+}
+
+.limitconpar{
+    color:#fff;
+    margin-left: 120px;
+    font-style: italic;
+    margin-bottom: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8750em;
+    margin-top:5%;
+    margin-left:8%;
+  
+}
+
+label[for="time-limit"]{
+    margin-top: 10px;
+    margin-right:15px;
+  
+}
+
+
+
+
+.col {
+    margin-bottom: 0; /* Override default margin */
+    height:47px;
+    margin-left:2%;
+}
+
+
+
+.minutes-choice{
+    flex-direction: row;
+    display: flex;
+    width: 600px;
+}
+
+
+#time-limit-seconds{
+    border-right: none;
+    border-top: none;
+    border-left:none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: brightness(1.0) saturate(100%);
+    color:#fff;
+    height:45px;
+    width:180px;
+     
+}
+
+.minutes-choice option {
+    background-color:#1B4242;
+}
+
+.numberitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.number-of-quiz {
+    display: grid;
+    align-items: center;
+    margin-bottom: 35px;
+    margin-left: 12%;
+}
+.num-per-point {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-left:20%;
+    
+
+}
+
+#num-quiz{
+    height:50px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left:none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+
+    
+}
+.numpoints p{
+color:#fff;
+font-style: italic;
+margin-right: 380px;
+margin-bottom: 4px;
+font-family: 'Times New Roman', Times, serif;
+font-size: 0.8750em;
+
+
+}
+
+#num-points{
+    height:50px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left:none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+}
+.input-group label {
+    margin-right: 10px;
+}
+.input-group input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.restriction {
+    display: flex;
+    align-items: center;
+     margin-top: 30px;
+     margin-right: 20px;
+     margin-bottom: 20px;
+
+}
+.restriction label {
+    margin-right: 80px;
+    font-size: 1em;
+ 
+
+}
+
+.form-check input[type="checkbox"]:checked  {
+    background-color: #1B4242; /* Change the background color */
+    border-color: #092635; /* Change the border color */
+    border:none;
+}
+
+
+
+.submitas{
+    font-size: 15px; 
+}
+
+
+.typequestionall{
+    justify-content: center;
+    display:"flex";
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width:80%;
+    padding:50px 0;
+    background:url('/img/one.jpg')
+}
+
+#start-time input {
+    color: #092635;
+}
+
+.typequestion{
+    display: flex;
+    margin-bottom: none;
+    justify-content: center;
+    display:"flex";
+    align-items: center;
+}
+
+.dropdownminute {
+    margin-right: none;
+    margin-bottom: none; 
+
+}
+
+/* Styles for the input box */
+.input-box {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styles for the number */
+.number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    margin-top: 17px; 
+    height: 30px;
+    width: 35px;
+    font-size: 0.8750em;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 5px;
+    margin-top: 25px;
+    background-color: #092635;
+    color: #fff;/* Adjust padding as needed */
+    border-radius: 5px ;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+   font-weight: bolder;
+
+}
+
+/* Styles for the delete icon */
+.deletetop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #092635;
+    padding: 5px;
+    margin-top: 20px; /* Color of the delete icon */
+}
+
+/* Additional styling for the input field */
+.input-box input[type="text"] {
+    padding-left: 20px; /* Add padding to accommodate the number */
+    padding-right: 20px; /* Add padding to accommodate the delete icon */
+}
+
+
+.dropdownminute:last-child {
+    margin-right: 0;
+}
+
+.dropdownminute label {
+    margin-bottom: 5px;
+}
+
+.dropdownminute input[type="text"],
+.dropdownminute input[type="number"],
+.dropdownminute select {
+    width: 90px;
+    height: 38px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #092635;
+}
+
+.dropdownminute .dropdown {
+    display: flex;
+    align-items: center;
+    margin-top: none; /* Align items vertically */
+}
+
+.dropdownminute .dropdown select {
+    margin-left: none;
+}
+
+.input-box {
+    display: flex; /* Use flexbox for better layout */
+    align-items: center; /* Align items vertically */
+}
+
+
+
+#question {
+    margin-top: 10px;
+    height: auto; /* Let height adjust based on content */
+    min-height: 120px; /* Minimum height to keep consistent appearance */
+    border-radius: 5px;
+    width: 520px; /* Fixed width for the textarea */
+    font-family: 'Times New Roman', Times, serif;
+    resize: vertical; /* Allow vertical resizing */
+    overflow: auto; /* Enable overflow to see the scrollbar when needed */
+    padding: 45px 10px 10px 40px; /* Adjusted padding for better placement */
+    color: #092635;
+}
+#question::placeholder{
+   font-size:1em;
+   font-family: 'Times New Roman', Times, serif;
+   color:#1B4242;
+
+  
+}
+
+.limitconpa {
+margin-top: 7%;
+margin-left: 8%;
+font-size: 12px;
+font-style: italic;
+}
+
+
+#time-limit{
+  height: 40px;
+  width: 208px;
+  border-right: 2px solid #092635;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+  color:#1B4242;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+
+
+}
+#time-limit-minutes {
+    height: 45px;
+    box-shadow: 20px 0px 16px 1px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #092635;
+    border-radius: 10px;
+ 
+}
+#points{
+    height: 40px;
+    width: 208px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    color:#1B4242;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+
+
+}
+
+#time-limit-unit{
+    border-right: solid 2px #092635;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    font-size:1em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#fff;
+    width:105px;
+    background-color: #092635;
+
+}
+
+.dropdownminute option {
+    font-size: 1em; /* Adjust font size */
+    font-weight: bold; /* Adjust font weight */
+    color: #fff; /* Adjust text color */
+    background-color: #1B4242; /* Adjust background color */
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.dropdownminute option:hover {
+  
+    background-color: #833c24; /* Adjust background color */
+}
+
+
+
+#time-limit:focus,
+#points:focus,
+#question:focus,
+#time-limit-unit:focus,
+#answerchoice:focus
+{
+    outline: none;
+    /* Remove default focus outline */
+    box-shadow: 0 2px 1px 2px #092635;
+    /* Apply custom box shadow */
+}
+
+.typequestionhere{
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to create new lines */
+    margin-bottom: none;
+    justify-content: center;
+    display:"flex";
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.letter-inside {
+    position: absolute;
+    top: 1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    left:2;
+    background-color: #092635;
+    border: 1px solid #000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin-top: 16px;
+    height: 35px;
+    margin-left: 2px;
+    width: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+#answerchoice::placeholder {
+    color: #999; /* Placeholder text color */
+    font-style: italic; /* Placeholder text style */
+   padding-left: 25px;
+}
+/* Styles for the icon container */
+.icon-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+/* Styles for the trash icon */
+.delete-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px; /* Adjust padding as needed */
+    cursor: pointer;
+    color: #092635;
+    margin-top: 1px;
+    margin-right: 4px;
+    margin-bottom: 2px; /* Spacing between the trash icon and the checkbox */
+}
+
+
+.answerchoice::placeholder {
+    font-family: 'Times New Roman', Times, serif;
+    color: #1B4242;
+    font-size: 1em;
+
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari) */
+.answerchoice::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+.answerchoice::-webkit-scrollbar-track::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+}
+
+.answerchoice::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 10px; /* Rounded corners for the scrollbar */
+}
+
+.answerchoice::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovered */
+}
+
+/* Custom scrollbar for Firefox */
+.answerchoice {
+    scrollbar-width: thin; /* Use 'thin' for a thin scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+}
+
+
+.answerchoice {
+    margin-top: 10px;
+    height: 60px; /* Set the height for the input field */
+    width: 520px; /* Set the width for the input field */
+    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+    padding: 15px 10px 10px 60px;
+    resize: none; /* Disable resizing */
+    
+    /* Enable horizontal scrolling */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    
+    white-space: nowrap; /* Prevent wrapping, force horizontal scrolling */
+    box-sizing: border-box; /* Include padding in the width */
+    font-family: 'Times New Roman', Times, serif;
+    color: #092635;
+}
+
+#add-answer-btn{
+    margin-top: 15px;
+    background-color: #092635;
+    height: 40px;
+    width: 200px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1.125em;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: brightness(1.0);
+}
+
+#add-answer-btn:hover{
+    height: 40px;
+    width: 200px;
+    color:#9EC8B9;
+}
+
+.icon-for-next{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 65px;
+}
+
+
+.next-button {
+    background-color: #1B4242;
+    color: white;
+    padding: 10px 20px;
+    height: 45px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    text-decoration: none;
+        
+    
+}
+    
+.next-button:hover{
+       background-color:#5C8374;
+}
+
+.next-button i {
+        margin-right: 5px;
+        font-size: 20px; /* Adjust spacing between icon and text */
+}
+
+.back-button {
+    background-color: #1B4242;
+    color: white;
+    padding: 10px 20px;
+    height: 45px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color:#5C8374;
+}
+.checkbox:checked {
+        background-color: #092635;
+        border-color: #092635;
+        border: none;
+}
+
+/* Additional styling for the checkbox */
+/* Additional styling for the checkbox */
+.checkbox {
+    margin-top: 30px;
+    margin-right: 10px; /* Spacing between the trash icon and the checkbox */
+    position: relative; /* Position relative to allow positioning the pseudo-element */
+}
+
+
+
+
+
+    
+.icon-container input[type="checkbox"]:checked {
+        background-color: #092635;
+        border-color: #092635;
+        border-width: 2px; /* Adjust border width if needed */
+        border-style: solid; /* Ensure border style is set */
+        /* Additional styling as needed */
+}
+
+ /* Addition section  */
+
+.add-section {
+        display: none;
+        position: fixed; /* Or absolute depending on your layout */
+        bottom:140px;
+        right: 260px; /* Align it to the right */
+        margin: 20px; /* Add some spacing if needed */
+        /* Add any other styling as required */
+}
+    
+    
+.fa-plus-circle {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        background-color: #ffff;
+        color: #1B4242;
+        font-size: 50px;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+        margin-right: 10px;
+        position: sticky;
+        top: 20px; /* Set the sticky offset (adjust as needed) */
+        /* Add animation */
+        animation: float 3s ease-in-out infinite;
+    }
+    
+    /* Floating effect on hover */
+    .fa-plus-circle:hover {
+        color: #5C8374;
+    }
+    
+    /* Define the keyframes for the floating animation */
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0); /* Starting and ending point */
+        }
+        50% {
+            transform: translateY(-10px); /* Float up at the middle of the animation */
+        }
+    }
+    
+
+
+    
+  /* Modal Styles */
+  .modal {
+
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    height: 400px; /* Set the height of the form */
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Hide overflow to prevent background from leaking */
+}
+
+.btn-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    color: #092635;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.half-image {
+    width: 100%;
+    height: 50%; /* Set the height to cover the top half of the form */
+    float: left;
+}
+
+.center-image {
+    width: 100px; /* Set the width of the circle image */
+    height: 100px; /* Set the height of the circle image */
+    border-radius: 50%; /* Make it a circle */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.0); /* Initial scale for the animation */
+    animation: pulse 2s infinite alternate, sparkling 2s infinite alternate; /* Animation effect */
+    background-color: #9EC8B9;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1.0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+@keyframes sparkling {
+    0% {
+        background-color: #092635;
+        box-shadow: 0 0 10px rgba(9, 38, 53, 0.8);
+    }
+    50% {
+        background-color: #1B4242;
+        box-shadow: 0 0 20px rgb(27, 66, 66, 0.8);
+    }
+    100% {
+        background-color: #5C8374;
+        box-shadow: 0 0 10px rgba(92, 131, 116, 0.8);
+    }
+}
+
+
+.submit-content {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.submit-text {
+    margin-bottom: 30px;
+    color: #092635;
+    font-weight: bold;
+    font-size: 1.125em;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+
+.yes-no {
+    display:flex;
+    justify-content: center;
+}
+.cancel-btn{
+ 
+padding: 10px 33px;
+    /* margin: 0 10px; */
+    color: #fff;
+    /* border-radius: 5px; */
+    font-size: 1em;
+   
+    height: 40px;
+    background-color: #1B4242;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+.yes-btn{
+    padding: 8px 33px;
+    /* margin: 0 10px; */
+    color: #fff;
+    /* border-radius: 5px; */
+    font-size: 1em;
+    background-color: #092635;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+ 
+}
+
+.yes-btn:hover
+{
+
+    color: #5C8374;
+}
+.cancel-btn:hover {
+    color:#092635;
+}
+.submit-content a {
+    text-decoration:none;
+    
+}
+
+.modal-backdrop.show {
+    opacity: .5;
+    z-index: 0;
+  }
+
+
+/* Addition section  */
+
+.add-section {
+    display: none;
+    position: fixed; /* Or absolute depending on your layout */
+    bottom:135px;
+    right: 300px; /* Align it to the right */
+    margin: 20px; /* Add some spacing if needed */
+    /* Add any other styling as required */
+}
+
+
+.fa-plus-circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: #ffff;
+    color: #1B4242;
+    font-size: 50px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    position: sticky;
+    top: 20px; /* Set the sticky offset (adjust as needed) */
+    /* Add animation */
+    animation: float 3s ease-in-out infinite;
+    cursor: pointer;
+}
+
+/* Floating effect on hover */
+.fa-plus-circle:hover {
+    color: #5C8374;
+}
+
+/* Define the keyframes for the floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Starting and ending point */
+    }
+    50% {
+        transform: translateY(-10px); /* Float up at the middle of the animation */
+    }
+}

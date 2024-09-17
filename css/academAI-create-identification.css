@@ -1,0 +1,559 @@
+
+
+.shortcontainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Added height to make the container visible */
+    z-index:1001;
+    width:100%;
+ 
+
+}
+.separatetop{
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  width: 90%;
+  background: url('/img/one.jpg');
+  padding:25px;
+  
+    
+}
+.submitformshort {
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index:1;
+}
+
+.submitformshort h1{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #092635;
+    
+
+
+}
+
+.limit-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Added to align items in a column */
+    width: 100%;
+    margin-top: 4px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    
+}
+
+.limitconpar{
+    color:#fff;;
+    margin-left: 65px;
+    margin-bottom: 40px;
+    font-style: italic;
+    margin-bottom: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8750em;
+
+}
+
+label[for="time-limit"]{
+    margin-top: 10px;
+    margin-right:14px;
+    margin-left: 2px;
+    color:#fff;
+    font-size:1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+.col {
+    display: grid;
+    margin-top:40px;
+}
+
+
+.minutes-choice{
+    flex-direction: row;
+    display: flex;
+    width: 600px;
+    margin-bottom:0;
+}
+
+
+#time-limit-minutes{
+    height: 45px;
+    box-shadow: 20px 0px 16px 1px rgba(0, 0, 0, 0.1);
+   border-top: none;
+   border-left:none;
+   border-bottom: 1px solid #092635;
+    border-radius: 10px;  
+   
+}
+
+#time-limit-seconds{
+    border-right: none;
+     border-top: none;
+    border-left:none;
+     border-radius: 10px;
+     width: 180px;
+     color:#fff;
+     height:45px;
+     background-color: rgba(0, 0, 0, 0.5);
+     filter: brightness(1.0) saturate(100%);
+     
+}
+
+
+
+.numberitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-left:7%;
+}
+.number-of-quiz {
+    display: grid;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+
+.number-of-points {
+    display: grid;
+    align-items: center;
+}
+
+
+.number-of-points label {
+    font-size: 1em;
+    color:#fff; /* Adjust color as needed */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.number-of-quiz label {
+    font-size: 1em;
+    color:#fff;/* Adjust color as needed */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#num-quiz{
+    height:50px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left:none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+    
+}
+.numpoints p{
+color:#fff;;
+font-style: italic;
+margin-right:500px;
+margin-bottom: 4px;
+font-family: 'Times New Roman', Times, serif;
+font-size: 0.8750em;
+width:100%;
+}
+#num-points{
+    height:50px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left:none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+
+}
+.input-group label {
+    margin-right: 10px;
+}
+.input-group input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submitas{
+    font-size: 15px; 
+}
+
+.typequestionall{
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-top: 20px;
+    border-radius: 20px;   
+    width:90%;
+    background: url('/img/one.jpg');
+   
+
+    
+
+}
+
+.typequestion{
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to create new lines */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top:20px;
+
+    
+}
+
+.typequestionhere{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    
+
+}
+.dropdownminute {
+    margin-right: none;
+    margin-bottom: none; 
+
+}
+
+/* Styles for the input box */
+.input-box {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styles for the number */
+.number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    margin-top: 17px; 
+    height: 30px;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 5px;
+    margin-top: 25px;
+    background-color: #092635;
+    color: white;/* Adjust padding as needed */
+    border-radius: 5px ;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    font-size:0.8750em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* Styles for the delete icon */
+.delete-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #092635;
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 20px; /* Color of the delete icon */
+}
+
+/* Additional styling for the input field */
+.input-box input[type="text"] {
+    padding-left: 20px; /* Add padding to accommodate the number */
+    padding-right: 20px; /* Add padding to accommodate the delete icon */
+}
+
+
+.dropdownminute:last-child {
+    margin-right: 0;
+}
+
+.dropdownminute label {
+    margin-bottom: 5px;
+}
+
+.dropdownminute input[type="text"],
+.dropdownminute input[type="number"],
+.dropdownminute select {
+    width: 90px;
+    height: 38px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #092635;
+}
+
+.dropdownminute .dropdown {
+    display: flex;
+    align-items: center;
+    margin-top: none; /* Align items vertically */
+}
+
+.dropdownminute .dropdown select {
+    margin-left: none;
+}
+
+#question{
+    width: 520px;
+    height: 130px;
+    margin-top: 20px;
+}
+
+
+#question::placeholder{
+    font-size:1em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#1B4242;
+}
+ 
+ 
+#time-limit{
+    height: 40px;
+    width: 208px;
+    border-right: 2px solid #092635;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #1B4242;
+}
+#points{
+    height: 40px;
+    width: 208px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #1B4242;
+}
+
+#time-limit-unit{
+  border-right: solid 2px #092635; 
+  font-size: 1em;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  width: 105px;
+  background-color: #092635;
+}
+
+.dropdownminute option {
+    font-size: 1em; /* Adjust font size */
+    color: #fff; /* Adjust text color */
+    background-color: #1B4242; /* Adjust background color */
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+#time-limit:focus,
+#points:focus,
+#question:focus,
+#time-limit-unit:focus,
+#answer:focus
+{
+    outline: none;
+    /* Remove default focus outline */
+    box-shadow: 0 2px 1px 2px #092635;
+    /* Apply custom box shadow */
+}
+
+#answer{
+    height: 50px ;
+    width: 520px;
+    border-bottom: solid 0.5px #092635;
+    border-right: solid 0.5px #092635;
+    box-shadow: 0 0px 2px 0px #092635;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#answer::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    color: #1B4242;
+    font-size: 1em;
+    padding-left: 50%; /* Adjust the left padding */
+}
+
+.button-container {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 65px;
+}
+
+/* Styles for the back button */
+.back-button {
+    background-color: #1B4242;
+    color: white;
+    padding: 10px 20px;
+    height: 45px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+.back-button a {
+    color: white;
+    text-decoration: none; /* Remove default underline */
+}
+
+.back-button:hover {
+    background-color: #5C8374;
+}
+
+/* If you want to adjust padding, font-size, or other styles for the anchor element, you can add them here */
+
+
+/* Styles for the next button */
+.next-button {
+    background-color: #1B4242;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 45px;
+    width: 150px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.next-button:hover {
+    background-color:  #5C8374;
+}
+
+.next-button i {
+    margin-left: 5px;
+}
+
+.button-container a {
+    text-decoration: none;
+}
+
+
+.form-check input[type="checkbox"]:checked  {
+    background-color: #1B4242; /* Change the background color */
+    border-color: #092635; /* Change the border color */
+    border:none;
+}
+
+.minutes-choice option {
+    background-color:#1B4242;
+}
+
+/* Add a new form for identification add icon */
+
+.add-section {
+        display: none;
+        position: fixed; /* Or absolute depending on your layout */
+        bottom:175px;
+        right: 285px; /* Align it to the right */
+        margin: 20px; /* Add some spacing if needed */
+        /* Add any other styling as required */
+}
+    
+    
+    .fa-plus-circle {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        background-color: #ffff;
+        color: #1B4242;
+        font-size: 50px;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+        margin-right: 10px;
+        position: sticky;
+        top: 20px; /* Set the sticky offset (adjust as needed) */
+        /* Add animation */
+        animation: float 3s ease-in-out infinite;
+    }
+    
+    /* Floating effect on hover */
+    .fa-plus-circle:hover {
+        color: #5C8374;
+    }
+    
+    /* Define the keyframes for the floating animation */
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0); /* Starting and ending point */
+        }
+        50% {
+            transform: translateY(-10px); /* Float up at the middle of the animation */
+        }
+    }
+    
+
+    .date{
+        margin-top:0;
+    }
+
+/*containerdate*/
+#start-time, #end-time, #start-date, #end-date {
+    height: 50px;
+    width: 280px;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #092635;
+    border-right: 1px solid #092635;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.separateform {
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: row;
+    display: flex;
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.containerdate, .containerendate {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.date-section-start, .dateend {
+    display: flex;
+    flex-direction: column;
+    margin-left:15%;
+}
+
+/*containerdate*/
